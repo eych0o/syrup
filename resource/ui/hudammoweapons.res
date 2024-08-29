@@ -13,19 +13,6 @@
 		"enabled"		"0"
 		"scaleImage"	"1"			
 	}
-	"AmmoBG"
-	{
-		"ControlName"	"ImagePanel"
-		"fieldName"		"AmmoBG"
-		"xpos"			"0"
-		"ypos"			"0"
-		"zpos"			"-1"
-		"wide"			"72"
-		"tall"			"52"
-		"visible"		"1"
-		"enabled"		"1"
-		"fillcolor"		"255 255 255 255"
-	}
 	"HudWeaponLowAmmoImage"
 	{
 		"ControlName"	"ImagePanel"
@@ -136,7 +123,7 @@
 		"ControlName"	"CExLabel"
 		"fieldName"		"AmmoNoClip"
 		"font"			"LDSR48"
-		"fgcolor"		"TanLight"
+		"fgcolor"		"White"
 		"xpos"			"0"
 		"ypos"			"0"
 		"zpos"			"5"

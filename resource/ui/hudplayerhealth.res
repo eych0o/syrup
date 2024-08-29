@@ -5,8 +5,8 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"HudPlayerHealth"
-		"xpos"			"c-72"		[$WIN32]
-		"ypos"			"c"	[$WIN32]
+		"xpos"			"c-152"		[$WIN32]
+		"ypos"			"c30"	[$WIN32]
 		"zpos"			"2"
 		"wide"			"72"
 		"tall"			"52"
@@ -15,19 +15,6 @@
 		"HealthBonusPosAdj"	"35"
 		"HealthDeathWarning"	"0.49"
 		"HealthDeathWarningColor"	"HUDDeathWarning"
-	}
-	"HealthBG"
-	{
-		"ControlName"	"ImagePanel"
-		"fieldName"		"HealthBG"
-		"xpos"			"0"
-		"ypos"			"0"
-		"zpos"			"-1"
-		"wide"			"72"
-		"tall"			"52"
-		"visible"		"1"
-		"enabled"		"1"
-		"fillcolor"		"255 255 255 255"
 	}
 	"PlayerStatusHealthImage"
 	{
@@ -94,7 +81,7 @@
 		"labelText"		"%Health%"
 		"textAlignment"	"center"	
 		"font"			"LDSR48"
-		"fgcolor"		"TanDark"
+		"fgcolor"		"White"
 	}
 	"PlayerStatusMaxHealthValue"
 	{
