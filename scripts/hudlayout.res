@@ -16,8 +16,8 @@
 		"fieldName" "HudWeaponAmmo"
 		"visible" "1"
 		"enabled" "1"
-		"xpos"	"c60"	[$WIN32]
-		"ypos"	"c30"	[$WIN32]
+		"xpos"	"c100"	[$WIN32]
+		"ypos"	"c40"	[$WIN32]
 		"wide"	"232"
 		"tall"	"48"
 	}
@@ -56,9 +56,7 @@
 		"visible"		"1"
 		"enabled"		"1"
 		"xpos"			"r162"	[$WIN32]
-		"xpos_minmode"	"r52"	[$WIN32]
 		"ypos"			"r52"	[$WIN32]
-		"ypos_minmode"	"r50"	[$WIN32]
 		"xpos"			"r194"	[$X360]
 		"ypos"			"r74"	[$X360]
 		"wide"			"100"
@@ -510,17 +508,15 @@
 		"CornerRadius"	  "3"
 		"RightJustify"	  "1"	// If 1, draw notices from the right
 		
-		"TextFont"		"Default"
+		"TextFont"		"Renogare12"
 		
 		"TeamBlue"		"HUDBlueTeamSolid"
 		"TeamRed"		"HUDRedTeamSolid"
 		"IconColor"		"HudWhite"
-		"LocalPlayerColor"	"HUDBlack"
+		"LocalPlayerColor"	"65 65 50 255"
 
-		"BaseBackgroundColor"	"46 43 42 220"		[$WIN32]
-		"LocalBackgroundColor"	"245 229 196 200"	[$WIN32]
-		"BaseBackgroundColor"	"32 32 32 255"		[$X360]
-		"LocalBackgroundColor"	"0 0 0 255"		[$X360]
+		"BaseBackgroundColor"	"40 40 40 200"		[$WIN32]
+		"LocalBackgroundColor"	"255 239 196 200"	[$WIN32]
 	}
 
 	HudVehicle

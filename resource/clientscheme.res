@@ -19,6 +19,15 @@ Scheme
 	Colors
 	{
 		// base colors
+		"EtonBlue"		"50 255 0 255"
+		"EtonRed"		"255 0 0 255"
+		"BadelinePurple"		"157 123 190 255"
+		"BadelinePurpleShadow"	"96 58 168 255"
+		"TrueWhite"				"255 255 255 255"
+		"TrueBlack"				"0 0 0 255"
+		"CelesteDark"			"17 10 14 255"
+		"CelesteLighter"		"37 24 33 255"
+		
 		"Orange"			"178 82 22 255"
 		"OrangeDim"			"178 82 22 120"
 		"LightOrange"		"188 112 0 128"
@@ -248,14 +257,14 @@ Scheme
 		Border.Dark						"Black"		// the dark/unlit side of a control
 		Border.Selection				"Gray"			// the additional border color for displaying the default/selected button
 
-		Button.TextColor				"TanLight"
-		Button.BgColor					"TanDark"
-		Button.ArmedTextColor			"TanLight"
-		Button.ArmedBgColor				"TFOrange"
+		Button.TextColor				"White"
+		Button.BgColor					"CelesteDark"
+		Button.ArmedTextColor			"White"
+		Button.ArmedBgColor				"CelesteLighter"
 		Button.SelectedTextColor		"TanLight"
-		Button.SelectedBgColor			"TFOrange"
+		Button.SelectedBgColor			"CelesteDark"
 		Button.DepressedTextColor		"Black"
-		Button.DepressedBgColor			"TFOrange"
+		Button.DepressedBgColor			"CelesteDark"
 
 		CheckButton.TextColor			"Yellow"
 		CheckButton.SelectedTextColor	"Yellow"
@@ -3071,6 +3080,65 @@ Scheme
 				"antialias" "0"
 			}
 		}
+		
+		"Renogare12"
+		{
+			"1"
+			{
+				"name"		"Renogare"
+				"tall"		"12"
+				"antialias" "1"
+			}
+		}
+		
+		"Renogare16"
+		{
+			"1"
+			{
+				"name"		"Renogare"
+				"tall"		"16"
+				"antialias" "1"
+			}
+		}
+		
+		"Renogare20"
+		{
+			"1"
+			{
+				"name"		"Renogare"
+				"tall"		"20"
+				"antialias" "1"
+			}
+		}
+			
+		"Renogare24"
+		{
+			"1"
+			{
+				"name"		"Renogare"
+				"tall"		"24"
+				"antialias" "1"
+			}
+		}		
+		"Renogare36"
+		{
+			"1"
+			{
+				"name"		"Renogare"
+				"tall"		"36"
+				"antialias" "1"
+			}
+		}
+		
+		"Renogare48"
+		{
+			"1"
+			{
+				"name"		"Renogare"
+				"tall"		"48"
+				"antialias" "1"
+			}
+		}	
 	}
 
 	//
@@ -5895,6 +5963,12 @@ Scheme
 		{
 			"font"	"resource/fonts/lunchds.ttf"
 			"name"	"Lunchtime Doubly So Regular"
+		}
+		
+		"19"
+		{
+			"font"	"resource/fonts/RenogareRegular.otf"
+			"name"	"Renogare"
 		}
 	}
 }
