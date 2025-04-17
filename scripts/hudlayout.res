@@ -19,7 +19,7 @@
 		"xpos"	"c100"	[$WIN32]
 		"ypos"	"c40"	[$WIN32]
 		"wide"	"232"
-		"tall"	"48"
+		"tall"	"68"
 	}
 	
 	HudObjectiveStatus

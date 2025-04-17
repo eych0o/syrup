@@ -27,6 +27,12 @@ Scheme
 		"TrueBlack"				"0 0 0 255"
 		"CelesteDark"			"17 10 14 255"
 		"CelesteLighter"		"37 24 33 255"
+		"Black1"				"51 51 51 255"
+		"Black2"				"102 102 102 255"
+		"Black3"				"153 153 153 255"
+		"Black4"				"204 204 204 255"
+		"MaddyBrightHair"		"253 218 149 255"
+		"MaddyDarkHair"			"230 129 93 255"
 		
 		"Orange"			"178 82 22 255"
 		"OrangeDim"			"178 82 22 120"
@@ -257,14 +263,14 @@ Scheme
 		Border.Dark						"Black"		// the dark/unlit side of a control
 		Border.Selection				"Gray"			// the additional border color for displaying the default/selected button
 
-		Button.TextColor				"White"
-		Button.BgColor					"CelesteDark"
-		Button.ArmedTextColor			"White"
-		Button.ArmedBgColor				"CelesteLighter"
-		Button.SelectedTextColor		"TanLight"
-		Button.SelectedBgColor			"CelesteDark"
-		Button.DepressedTextColor		"Black"
-		Button.DepressedBgColor			"CelesteDark"
+		Button.TextColor				"TrueWhite"
+		Button.BgColor					"Black1"
+		Button.ArmedTextColor			"TrueWhite"
+		Button.ArmedBgColor				"Black2"
+		Button.SelectedTextColor		"TrueWhite"
+		Button.SelectedBgColor			"Black2"
+		Button.DepressedTextColor		"Black2"
+		Button.DepressedBgColor			"Black2"
 
 		CheckButton.TextColor			"Yellow"
 		CheckButton.SelectedTextColor	"Yellow"
@@ -3138,7 +3144,57 @@ Scheme
 				"tall"		"48"
 				"antialias" "1"
 			}
-		}	
+		}
+
+		"Namaku12"
+		{
+			"1"
+			{
+				"name"		"Namaku"
+				"tall"		"12"
+				"antialias" "1"
+			}
+		}
+		
+		"Namaku16"
+		{
+			"1"
+			{
+				"name"		"Namaku"
+				"tall"		"16"
+				"antialias" "1"
+			}
+		}
+		
+		"Namaku24"
+		{
+			"1"
+			{
+				"name"		"Namaku"
+				"tall"		"24"
+				"antialias" "1"
+			}
+		}
+		
+		"Namaku36"
+		{
+			"1"
+			{
+				"name"		"Namaku"
+				"tall"		"36"
+				"antialias" "1"
+			}
+		}
+		
+		"Namaku48"
+		{
+			"1"
+			{
+				"name"		"Namaku"
+				"tall"		"48"
+				"antialias" "1"
+			}
+		}
 	}
 
 	//
@@ -5821,6 +5877,96 @@ Scheme
 				}
 			}
 		}
+		
+		// Custom borders if I ever get around to doing them. CUSTOMBORDERS tag
+		
+		EtonBorderPurp
+		{
+			"bordertype"			"scalable_image"
+			"backgroundtype"		"2"
+			
+			"image"					"replay/thumbnails/color_panel_purp"
+			"src_corner_height"		"32"				// pixels inside the image
+			"src_corner_width"		"32"
+			"draw_corner_width"		"4"				// screen size of the corners ( and sides ), proportional
+			"draw_corner_height" 	"4"	
+		}
+		
+		EtonBorderRed
+		{
+			"bordertype"			"scalable_image"
+			"backgroundtype"		"2"
+			
+			"image"					"replay/thumbnails/color_panel_red"
+			"src_corner_height"		"32"				// pixels inside the image
+			"src_corner_width"		"32"
+			"draw_corner_width"		"4"				// screen size of the corners ( and sides ), proportional
+			"draw_corner_height" 	"4"	
+		}
+		
+		EtonBorderBlue
+		{
+			"bordertype"			"scalable_image"
+			"backgroundtype"		"2"
+			
+			"image"					"replay/thumbnails/color_panel_blue"
+			"src_corner_height"		"32"				// pixels inside the image
+			"src_corner_width"		"32"
+			"draw_corner_width"		"4"				// screen size of the corners ( and sides ), proportional
+			"draw_corner_height" 	"4"	
+		}
+		
+		EtonBorderPurpTrans
+		{
+			"bordertype"			"scalable_image"
+			"backgroundtype"		"2"
+			
+			"image"					"replay/thumbnails/trans_panel_purp"
+			"src_corner_height"		"32"				// pixels inside the image
+			"src_corner_width"		"32"
+			"draw_corner_width"		"4"				// screen size of the corners ( and sides ), proportional
+			"draw_corner_height" 	"4"	
+		}
+		
+		EtonBorderRedTrans
+		{
+			"bordertype"			"scalable_image"
+			"backgroundtype"		"2"
+			
+			"image"					"replay/thumbnails/trans_panel_red"
+			"src_corner_height"		"32"				// pixels inside the image
+			"src_corner_width"		"32"
+			"draw_corner_width"		"4"				// screen size of the corners ( and sides ), proportional
+			"draw_corner_height" 	"4"	
+		}
+		
+		EtonBorderBlueTrans
+		{
+			"bordertype"			"scalable_image"
+			"backgroundtype"		"2"
+			
+			"image"					"replay/thumbnails/trans_panel_blue"
+			"src_corner_height"		"32"				// pixels inside the image
+			"src_corner_width"		"32"
+			"draw_corner_width"		"4"				// screen size of the corners ( and sides ), proportional
+			"draw_corner_height" 	"4"	
+		}
+		
+		EtonBorderBlack
+		{
+			"bordertype"			"scalable_image"
+			"backgroundtype"		"2"
+			
+			"image"					"replay/thumbnails/edgy_panel"
+			"src_corner_height"		"32"				// pixels inside the image
+			"src_corner_width"		"32"
+			"draw_corner_width"		"4"				// screen size of the corners ( and sides ), proportional
+			"draw_corner_height" 	"4"	
+		}
+		
+		
+		
+		
 	}
 
 	//////////////////////// CUSTOM FONT FILES /////////////////////////////
@@ -5969,6 +6115,12 @@ Scheme
 		{
 			"font"	"resource/fonts/RenogareRegular.otf"
 			"name"	"Renogare"
+		}
+		
+		"20"
+		{
+			"font"	"resource/fonts/Namaku.ttf"
+			"name"	"Namaku"
 		}
 	}
 }

@@ -211,6 +211,10 @@ event HudHealthBonusPulse
 	
 	Animate	PlayerStatusHealthValue 	FgColor		"255 152 255 255"			Linear 0.0 0.0
 	Animate	PlayerStatusHealthValueShadow	FgColor		"230 85 230 255"			Linear 0.0 0.0
+	
+	Animate Badeline	Alpha	"0" Linear 0.0 0.0
+	
+	Animate Crazyline	Alpha "255" Linear 0.0 0.0
 
 	RunEvent HudHealthBonusPulseLoop	0.4
 }
@@ -228,6 +232,10 @@ event HudHealthBonusPulseStop
 	
 	Animate	PlayerStatusHealthValue 	FgColor		"BadelinePurple"			Linear 0.0 0.0
 	Animate	PlayerStatusHealthValueShadow 	FgColor		"BadelinePurpleShadow"			Linear 0.0 0.0
+	
+	Animate Crazyline	Alpha	"0" Linear 0.0 0.0
+	
+	Animate Badeline	Alpha "255" Linear 0.0 0.0
 }
 
 //===========================================
@@ -240,6 +248,10 @@ event HudHealthDyingPulse
 	
 	Animate	PlayerStatusHealthValue 	FgColor		"101 243 255 255"			Linear 0.0 0.2
 	Animate	PlayerStatusHealthValueShadow	FgColor		"72 152 226 255"			Linear 0.0 0.2
+	
+	Animate Badeline	Alpha	"0" Linear 0.0 0.0
+	
+	Animate Sadeline	Alpha "255" Linear 0.0 0.0
 	
 	RunEvent HudHealthDyingPulseLoop	0.4
 }
@@ -257,6 +269,10 @@ event HudHealthDyingPulseStop
 	
 	Animate	PlayerStatusHealthValue 	FgColor		"BadelinePurple"			Linear 0.0 0.2
 	Animate	PlayerStatusHealthValueShadow 	FgColor		"BadelinePurpleShadow"			Linear 0.0 0.2
+	
+	Animate Sadeline	Alpha	"0" Linear 0.0 0.0
+	
+	Animate Badeline	Alpha "255" Linear 0.0 0.0
 }
 
 //===========================================

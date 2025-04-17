@@ -8,8 +8,8 @@
 		"xpos"			"c-220"		[$WIN32]
 		"ypos"			"c40"	[$WIN32]
 		"zpos"			"2"
-		"wide"			"120"
-		"tall"			"142"
+		"wide"			"140"
+		"tall"			"162"
 		"visible"		"1"
 		"enabled"		"1"	
 		"HealthBonusPosAdj"	"35"
@@ -34,16 +34,10 @@
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"PlayerStatusHealthImageBG"
-		"xpos"			"73"
-		"xpos_minmode"	"58"
-		"ypos"			"33"
-		"zpos"			"3"
 		"wide"			"0"
 		"tall"			"0"
 		"visible"		"0"
 		"enabled"		"0"
-		"image"			"../hud/health_bg"
-		"scaleImage"	"1"	
 	}	
 	"PlayerStatusHealthBonusImage"
 	{
@@ -71,7 +65,7 @@
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"PlayerStatusHealthValue"
-		"xpos"			"48"
+		"xpos"			"76"
 		"ypos"			"0"	[$WIN32]
 		"zpos"			"5"
 		"wide"			"72"
@@ -80,15 +74,15 @@
 		"enabled"		"1"
 		"labelText"		"%Health%"
 		"textAlignment"	"center"	
-		"font"			"LDSR48"
+		"font"			"Renogare24"
 		"fgcolor"		"BadelinePurple"
 	}
 	"PlayerStatusHealthValueShadow"
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"PlayerStatusHealthValueShadow"
-		"xpos"			"48"
-		"ypos"			"3"	[$WIN32]
+		"xpos"			"76"
+		"ypos"			"2"	[$WIN32]
 		"zpos"			"5"
 		"wide"			"72"
 		"tall"			"52"
@@ -96,7 +90,7 @@
 		"enabled"		"1"
 		"labelText"		"%Health%"
 		"textAlignment"	"center"	
-		"font"			"LDSR48"
+		"font"			"Renogare24"
 		"fgcolor"		"BadelinePurpleShadow"
 	}
 	"PlayerStatusMaxHealthValue"
@@ -120,14 +114,49 @@
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"Badeline"
-		"xpos"			"0"
+		"xpos"			"48"
 		"ypos"			"0"
 		"zpos"			"4"
-		"wide"			"48"
-		"tall"			"48"
+		"wide"			"40"
+		"tall"			"40"
 		"visible"		"1"
 		"enabled"		"1"
 		"image"			"replay/thumbnails/badeline"
 		"scaleImage"	"1"
+		"alpha"			"1"
+	}
+	
+	"Sadeline"
+	{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"Sadeline"
+		"xpos"			"48"
+		"ypos"			"0"
+		"zpos"			"4"
+		"wide"			"40"
+		"tall"			"40"
+		"visible"		"1"
+		"enabled"		"1"
+		"image"			"replay/thumbnails/sadeline"
+		"scaleImage"	"1"
+		"alpha"	"0"
+		
+	}
+	
+	"Crazyline"
+	{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"Crazyline"
+		"xpos"			"48"
+		"ypos"			"0"
+		"zpos"			"4"
+		"wide"			"40"
+		"tall"			"40"
+		"visible"		"1"
+		"enabled"		"1"
+		"image"			"replay/thumbnails/maniline"
+		"scaleImage"	"1"
+		"alpha"	"0"
+		
 	}
 }

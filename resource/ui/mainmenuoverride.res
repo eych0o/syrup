@@ -1,3 +1,4 @@
+#base "vguipreload.res"
 "Resource/UI/MainMenuOverride.res"
 {
 	MainMenuOverride
@@ -180,16 +181,50 @@
 		{
 			"wide"			"f0"
 			"tall"			"o0.628"
-			"scaleImage"	"0"
 		}
 
 		if_taller
 		{
 			"wide"			"o1.6"
 			"tall"			"f0"
-			"scaleImage"	"0"
 		}
 		
+		if_halloween_0
+		{
+			"image"		"../console/title_team_halloween2011_widescreen"
+		}
+		if_halloween_1
+		{
+			"image"		"../console/title_team_halloween2012_widescreen"
+		}
+		if_halloween_2
+		{
+			"image"		"../console/title_team_halloween2013_widescreen"
+		}
+		if_halloween_3
+		{
+			"image"		"../console/title_team_halloween2014_widescreen"
+		}
+		if_halloween_4
+		{	
+			"image"		"../console/title_team_halloween2015_widescreen"
+		}
+		if_halloween_5
+		{	
+			"image"		"../console/title_scream_fortress_2017_widescreen"
+		}
+		if_fullmoon
+		{
+			"image"		"../console/title_fullmoon_widescreen"
+		}
+		if_christmas_0
+		{
+			"image"		"../console/background_xmas2020_widescreen"
+		}
+		if_christmas_1
+		{
+			"image"		"../console/background_xmas2023_widescreen"
+		}
 	}
 					
 	"TFLogoImage"
@@ -201,10 +236,10 @@
 		"zpos"			"1"
 		"wide"			"256"
 		"tall"			"64"
-		"visible"		"0"
-		"enabled"		"0"
-		"image"			"../logo/new_tf2_logo"
-		"scaleImage"	"1"
+		"visible"		"1"
+		"enabled"		"1"
+		"image"			"replay/thumbnails/tf2badeline_logo"
+		"scaleImage"	"0"
 		"mouseinputenabled"	"0"
 	}	
 	
@@ -212,18 +247,22 @@
 	{
 		// "ControlName"	"ImagePanel"
 		"fieldName"		"TFCharacterImage"
-		"wide"			"0"
-		"tall"			"0"
-		"visible"		"0"
-		"enabled"		"0"
+		"xpos"			"c-250"
+		"ypos"			"-80"
+		"zpos"			"-99"
+		"wide"			"600"
+		"tall"			"600"
+		"visible"		"1"
+		"enabled"		"1"
+		"scaleImage"	"1"
 	}
 
 	"RankModelPanel"
 	{
 		"ControlName"	"CPvPRankPanel"
 		"fieldName"		"RankModelPanel"
-		"xpos"			"cs-0.5+365"
-		"ypos"			"cs-0.5-30"
+		"xpos"			"cs-0.5-256"
+		"ypos"			"cs-0.5-120"
 
 		"zpos"			"-51"
 		"wide"			"1000"
@@ -241,8 +280,8 @@
 	{
 		"ControlName"	"CExImageButton"
 		"fieldName"		"CycleRankTypeButton"
-		"xpos"			"cs-0.5-320"
-		"ypos"			"cs-0.5-200"
+		"xpos"			"cs-0.5-44"
+		"ypos"			"cs-0.5-134"
 		"wide"			"15"
 		"tall"			"15"
 		"autoResize"	"0"
@@ -313,10 +352,10 @@
 		"ControlName"	"CPvPRankPanel"
 		"fieldName"		"RankPanel"
 		"xpos"			"c-350"
-		"ypos"			"30"
+		"ypos"			"72"
 		"zpos"			"-52"
-		"wide"			"700"
-		"tall"			"200"
+		"wide"			"320"
+		"tall"			"100"
 		"visible"		"0"
 		"proportionaltoparent"	"1"
 		"mouseinputenabled"	"0"
@@ -370,14 +409,17 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"RankBorder"
-		"xpos"			"0"
-		"ypos"			"0"
+		"xpos"			"c-290"
+		"ypos"			"94"
 		"zpos"			"-100"
-		"wide"			"0"
-		"tall"			"0"
-		"visible"		"0"
-		"proportionaltoparent"	"0"
+		"wide"			"260"
+		"tall"			"60"
+		"visible"		"1"
+		"PaintBackgroundType"	"2"
+		"border"		"EtonBorderPurp"
+		"proportionaltoparent"	"1"
 	}
+	
 	
 	"TooltipPanel"
 	{
@@ -1347,13 +1389,14 @@
 		"tall"			"150"
 		"visible"		"1"
 
+		"border"		"EtonBorderPurp"
 
 		"TitleLabel"
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"TitleLabel"
-			"font"			"Renogare24"
-			"labelText"		"Friends"
+			"font"			"Renogare16"
+			"labelText"		"my niggas !!!"
 			"textAlignment"	"west"
 			"xpos"			"12"
 			"ypos"			"0"
@@ -1371,12 +1414,17 @@
 		{
 			"ControlName"	"EditablePanel"
 			"fieldname"		"InnerShadow"
-			"wide"			"0"
-			"tall"			"0"
-			"visible"		"0"	
+			"xpos"			"cs-0.5"
+			"ypos"			"rs1-10"
+			"zpos"			"501"
+			"wide"			"f10"
+			"tall"			"110"
+			"visible"		"1"	
 			"PaintBackgroundType"	"0"
+			"proportionaltoparent"	"1"
+			"mouseinputenabled"	"0"
 
-			"paintborder"	"0"
+			"paintborder"	"1"
 			"border"		"InnerShadowBorder"
 		}
 
@@ -1419,7 +1467,7 @@
 
 				"Slider"
 				{
-					"fgcolor_override"	"TrueWhite"
+					"fgcolor_override"	"TanDark"
 				}
 		
 				"UpButton"
@@ -1442,14 +1490,17 @@
 		{
 			"ControlName"	"EditablePanel"
 			"fieldname"		"BelowDarken"
-			"wide"			"0"
-			"tall"			"0"
-			"visible"		"0"	
+			"xpos"			"cs-0.5"
+			"ypos"			"rs1-10"
+			"zpos"			"499"
+			"wide"			"f10"
+			"tall"			"110"
+			"visible"		"1"	
 			"PaintBackgroundType"	"0"
 			"proportionaltoparent"	"1"
 			"mouseinputenabled"	"0"
 
-			"bgcolor_override"	"0 0 0 0"
+			"bgcolor_override"	"0 0 0 100"
 		}
 	}
 
@@ -1457,339 +1508,9 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldname"		"EventPromo"
-		"xpos"			"0"
-		"ypos"			"0"
-		"zpos"			"-50"
 		"wide"			"0"
 		"tall"			"0"
 		"visible"		"0"
-
-		"Background"
-		{
-			"ControlName"	"EditablePanel"
-			"fieldname"		"Background"
-			"xpos"			"0"
-			"ypos"			"0"
-			"zpos"			"0"
-			"wide"			"260"
-//			"tall"			"120"
-			"tall"			"96"
-			"visible"		"1"
-			"PaintBackgroundType"	"0"
-			"proportionaltoparent"	"1"
-
-			"paintborder"	"1"
-			"border"		"MainMenuBGBorder"
-
-			"TitleLabel"
-			{
-				"ControlName"	"CExLabel"
-				"fieldName"		"TitleLabel"
-				"font"			"HudFontSmallBold"
-				"labelText"		"#MMenu_Update"
-				"textAlignment"	"west"
-				"xpos"			"12"
-				"ypos"			"0"
-				"wide"			"f0"
-				"tall"			"30"
-				"autoResize"	"0"
-				"pinCorner"		"0"
-				"visible"		"1"
-				"enabled"		"1"
-				"textinsetx"	"0"
-				"fgcolor_override"	"235 227 203 255"
-			}
-
-//			"ViewDetailsGlow"
-//			{
-//				"ControlName"	"Panel"
-//				"fieldName"		"ViewDetailsGlow"
-//				"xpos"			"p0.02"
-//				"ypos"			"27"
-//				"zpos"			"10"
-//				"wide"			"p0.48"
-//				"tall"			"26"
-//				"visible"		"0"
-//				"proportionaltoparent"	"1"
-//
-//				"paintborder"	"0"
-//				"border"	"MainMenuButtonGlow"
-//				"paintbackground"		"3"
-//				"bgcolor_override"	"238 103 17 255"
-//			}
-//
-//			"ViewDetailsButton"
-//			{
-//				"ControlName"	"EditablePanel"
-//				"fieldname"		"ViewDetailsButton"
-//				"xpos"			"p0.02"
-//				"ypos"			"27"
-//				"zpos"			"11"
-//				"wide"			"p0.48"
-//				"tall"			"26"
-//				"visible"		"1"
-//				"PaintBackgroundType"	"0"
-//				"proportionaltoparent"	"1"
-//
-//				"SubButton"
-//				{
-//					"ControlName"	"CExImageButton"
-//					"fieldName"		"SubButton"
-//					"xpos"			"cs-0.5"
-//					"ypos"			"0"
-//					"wide"			"f0"
-//					"tall"			"f0"
-//					"autoResize"	"0"
-//					"pinCorner"		"3"
-//					"visible"		"1"
-//					"enabled"		"1"
-//					"tabPosition"	"0"
-//					"use_proportional_insets" "1"
-//					"font"			"HudFontSmallBold"
-//					"textAlignment"	"center"
-//					"dulltext"		"0"
-//					"brighttext"	"0"
-//					"default"		"1"
-//					"sound_depressed"	"UI/buttonclick.wav"
-//					"sound_released"	"UI/buttonclickrelease.wav"
-//					"labeltext"		"#MMenu_ViewUpdateDetails"
-//					"proportionaltoparent"	"1"
-//					"command"		"view_update_page"
-//					"actionsignallevel"	"4"
-//			
-//					"border_default"	"MainMenuButtonDefault"
-//					"border_armed"		"MainMenuButtonArmed"
-//					"paintbackground"	"0"
-//			
-//					"defaultFgColor_override" "46 43 42 255"
-//					"armedFgColor_override" "235 226 202 255"
-//					"depressedFgColor_override" "46 43 42 255"
-//			
-//					"image_drawcolor"	"117 107 94 255"
-//					"image_armedcolor"	"235 226 202 255"
-//				}
-//			}
-//
-//			"ViewWarButtonGlow"
-//			{
-//				"ControlName"	"Panel"
-//				"fieldName"		"ViewWarButtonGlow"
-//				"xpos"			"p0.5"
-//				"ypos"			"27"
-//				"zpos"			"10"
-//				"wide"			"124"
-//				"tall"			"26"
-//				"visible"		"0"
-//				"proportionaltoparent"	"1"
-//
-//				"paintborder"	"0"
-//				"border"	"MainMenuButtonGlow"
-//				"paintbackground"		"3"
-//				"bgcolor_override"	"238 103 17 255"
-//			}
-//
-//			"ViewWarButton"
-//			{
-//				"ControlName"	"EditablePanel"
-//				"fieldname"		"ViewWarButton"
-//				"xpos"			"p0.5"
-//				"ypos"			"27"
-//				"zpos"			"11"
-//				"wide"			"p0.48"
-//				"tall"			"26"
-//				"visible"		"1"
-//				"PaintBackgroundType"	"0"
-//				"proportionaltoparent"	"1"
-//
-//				"SubButton"
-//				{
-//					"ControlName"	"CExImageButton"
-//					"fieldName"		"SubButton"
-//					"xpos"			"cs-0.5"
-//					"ypos"			"0"
-//					"wide"			"f0"
-//					"tall"			"f0"
-//					"autoResize"	"0"
-//					"pinCorner"		"3"
-//					"visible"		"1"
-//					"enabled"		"1"
-//					"tabPosition"	"0"
-//					"use_proportional_insets" "1"
-//					"font"			"HudFontSmallBold"
-//					"textAlignment"	"center"
-//					"dulltext"		"0"
-//					"brighttext"	"0"
-//					"default"		"1"
-//					"sound_depressed"	"UI/buttonclick.wav"
-//					"sound_released"	"UI/buttonclickrelease.wav"
-//					"labeltext"		"#MMenu_ViewWar"
-//					"proportionaltoparent"	"1"
-//					"command"		"view_war"
-//					"actionsignallevel"	"4"
-//			
-//					"border_default"	"MainMenuButtonDefault"
-//					"border_armed"		"MainMenuButtonArmed"
-//					"paintbackground"	"0"
-//			
-//					"defaultFgColor_override" "46 43 42 255"
-//					"armedFgColor_override" "235 226 202 255"
-//					"depressedFgColor_override" "46 43 42 255"
-//			
-//					"image_drawcolor"	"117 107 94 255"
-//					"image_armedcolor"	"235 226 202 255"
-//				}
-//			}
-			
-			"CyclingAd"
-			{
-				"ControlName"			"CCyclingAdContainerPanel"
-				"fieldName"				"CyclingAd"
-				"xpos"					"5"
-//				"ypos"					"p0.47"
-				"ypos"					"27"
-				"zpos"					"100"
-				"wide"					"f10"
-//				"tall"					"p0.5"
-				"tall"					"60"
-				"visible"				"1"
-				"enabled"				"1"
-				"scaleImage"			"1"
-				"proportionaltoparent"	"1"
-
-				"bgcolor_override"		"0 0 0 255"
-
-				"items"
-				{
-					"0"
-					{
-						"item"		"Winter 2023 Cosmetic Key"
-						"show_market"	"0"
-					}
-					"1"
-					{
-						"item"		"Winter 2023 Cosmetic Case"
-						"show_market"	"1"
-					}
-					"2"
-					{
-						"item"		"Taunt: Cheers!"
-						"show_market"	"0"
-					}
-					"3"
-					{
-						"item"		"Taunt: Mourning Mercs"
-						"show_market"	"0"
-					}
-					"4"
-					{
-						"item"		"Taunt: Foul Play"
-						"show_market"	"0"
-					}
-					"5"
-					{
-						"item"		"Map Token Snowtower"
-						"show_market"	"0"
-					}
-					"6"
-					{
-						"item"		"Map Token Krampus"
-						"show_market"	"0"
-					}
-					"7"
-					{
-						"item"		"Map Token Haarp"
-						"show_market"	"0"
-					}
-					"8"
-					{
-						"item"		"Map Token Brew"
-						"show_market"	"0"
-					}
-					"9"
-					{
-						"item"		"Map Token Hacksaw"
-						"show_market"	"0"
-					}
-					"10"
-					{
-						"item"		"Map Token Turbine Event"
-						"show_market"	"0"
-					}
-					"11"
-					{
-						"item"		"Map Token Carrier"
-						"show_market"	"0"
-					}
-					"12"
-					{
-						"item"		"Map Token Galleria"
-						"show_market"	"0"
-					}
-					"13"
-					{
-						"item"		"Map Token Emerge"
-						"show_market"	"0"
-					}
-					"14"
-					{
-						"item"		"Map Token Camber"
-						"show_market"	"0"
-					}
-					"15"
-					{
-						"item"		"Strange Filter: Snowtower (Community)"
-						"show_market"	"0"
-					}
-					"16"
-					{
-						"item"		"Strange Filter: Krampus (Community)"
-						"show_market"	"0"
-					}
-					"17"
-					{
-						"item"		"Strange Filter: Haarp (Community)"
-						"show_market"	"0"
-					}
-					"18"
-					{
-						"item"		"Strange Filter: Brew (Community)"
-						"show_market"	"0"
-					}
-					"19"
-					{
-						"item"		"Strange Filter: Hacksaw (Community)"
-						"show_market"	"0"
-					}
-					"20"
-					{
-						"item"		"Strange Filter: Turbine Event (Community)"
-						"show_market"	"0"
-					}
-					"21"
-					{
-						"item"		"Strange Filter: Carrier (Community)"
-						"show_market"	"0"
-					}
-					"22"
-					{
-						"item"		"Strange Filter: Galleria (Community)"
-						"show_market"	"0"
-					}
-					"23"
-					{
-						"item"		"Strange Filter: Emerge (Community)"
-						"show_market"	"0"
-					}
-					"24"
-					{
-						"item"		"Strange Filter: Camber (Community)"
-						"show_market"	"0"
-					}
-				}
-			}
-
-		} // Background
-
 	} // EventPromo
 
 	"SafeMode"
@@ -2264,15 +1985,10 @@
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"BackgroundFooter"
-		"xpos"			"0"
-		"ypos"			"420"
-		"zpos"			"-50"
 		"wide"			"0"
 		"tall"			"0"
 		"visible"		"0"
 		"enabled"		"0"
-		"image"			"loadout_bottom_gradient"
-		"tileImage"		"1"
 	}				
 	"FooterLine"
 	{
@@ -2281,8 +1997,8 @@
 		"xpos"			"0"
 		"ypos"			"420"
 		"zpos"			"-5-"
-		"wide"			"f0"
-		"tall"			"10"
+		"wide"			"0"
+		"tall"			"0"
 		"visible"		"0"
 		"enabled"		"0"
 		"image"			"loadout_solid_line"
@@ -2317,7 +2033,7 @@
 			
 		"paintbackground"	"1"
 				
-		"image_drawcolor"	"235 226 202 255"
+		"image_drawcolor"	"Black4"
 		"SubImage"
 		{
 			"ControlName"	"ImagePanel"
@@ -2365,12 +2081,12 @@
 		"tabPosition"	"0"
 		"textinsetx"	"25"
 		"use_proportional_insets" "1"
-		"font"			"Renogare16"
+		"font"			"HudFontSmallBold"
 		"textAlignment"	"west"
 		"dulltext"		"0"
 		"brighttext"	"0"
 		"default"		"1"
-		"labeltext" "Shop"
+		"labeltext" "#MMenu_Shop"
 		"command" "engine open_store"
 		"proportionaltoparent"	"1"
 
@@ -3001,14 +2717,14 @@
 		"xpos"			"0"
 		"ypos"			"300"
 		"zpos"			"1"
-		"wide"			"130"
-		"tall"			"20"
+		"wide"			"170"
+		"tall"			"24"
 		"autoResize"	"0"
 		"pinCorner"		"3"
 		"visible"		"1"
 		"enabled"		"1"
 		"tabPosition"	"0"
-		"labelText"		"Refresh"
+		"labelText"		"MAA-Refresh"
 		"defaultfgColor_override" "255 255 255 255"
 		"armedfgColor_override" "0 255 0 255"
 		"font"			"Renogare24"
@@ -3042,14 +2758,15 @@
 		"xpos"			"0"
 		"ypos"			"340"
 		"zpos"			"1"
-		"wide"			"130"
-		"tall"			"20"
+		"wide"			"170"
+		"tall"			"24"
 		"autoResize"	"0"
 		"pinCorner"		"3"
 		"visible"		"1"
 		"enabled"		"1"
 		"tabPosition"	"0"
-		"labelText"		"refreshhudscheme"
+		"labelText"		"HRS-
+		Refresh"
 		"defaultfgColor_override" "255 255 255 255"
 		"armedfgColor_override" "0 255 0 255"
 		"font"			"Renogare24"
@@ -3075,51 +2792,4 @@
 		
 		
 	}
-	
-	"PartySlot0"
-	{
-		"ControlName"	"CDashboardPartyMember"
-		"fieldName"		"PartySlot0"
-		"xpos"			"c-310"
-		"ypos"			"50"
-		"zpos"			"100"
-		"wide"			"o1"
-		"tall"			"85"
-		"autoResize"	"0"
-		"visible"		"1"
-		"enabled"		"1"
-
-		"party_slot"	"0"
-	}
-	
-	"GoldTicket"
-	{
-		"ControlName"	"ImagePanel"
-		"fieldName"		"AvatarBackground"
-		"xpos"			"c-340"
-		"ypos"			"25"
-		"zpos"			"-1000"
-		"wide"			"400"
-		"tall"			"150"
-		"visible"		"1"
-		"enabled"		"1"
-		"image"			"replay/thumbnails/maxticket"
-		"scaleImage"	"0"
-	}
-	
-	"GoldTicketInsides"
-	{
-		"ControlName"	"ImagePanel"
-		"fieldName"		"AvatarBackgroundInsides"
-		"xpos"			"c-10"
-		"ypos"			"35"
-		"zpos"			"-1001"
-		"wide"			"375"
-		"tall"			"128"
-		"visible"		"1"
-		"enabled"		"1"
-		"image"			"replay/thumbnails/maxticketopen"
-		"scaleImage"	"0"
-	}
-
 }

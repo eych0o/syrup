@@ -76,18 +76,18 @@
 	{
 		"ControlName"	"CTFImagePanel"
 		"fieldName"		"PlayerStatusClassImageBG"
-		"xpos"			"9"		[$WIN32]
+		"xpos"			"c-170"		[$WIN32]
 		"xpos_minmode"	"-10"		[$WIN32]
-		"ypos"			"r60"	[$WIN32]
+		"ypos"			"c40"	[$WIN32]
 		"ypos_minmode"		"r40"	[$WIN32]
 		"xpos"			"41"	[$X360]
 		"ypos"			"r82"	[$X360]
 		"zpos"			"1"		
-		"wide"			"0"
-		"tall"			"0"
-		"visible"		"0"
-		"enabled"		"0"
-		"scaleImage"	"0"
+		"wide"			"100"
+		"tall"			"50"
+		"visible"		"1"
+		"enabled"		"1"
+		"scaleImage"	"1"
 		"image"			"../hud/character_red_bg"	
 		"teambg_2"		"../hud/character_red_bg"
 		"teambg_2_lodef"	"../hud/character_red_bg_lodef"
